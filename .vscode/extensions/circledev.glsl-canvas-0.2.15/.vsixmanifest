@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="glsl-canvas" Version="0.2.15" Publisher="circledev"/>
+    <DisplayName>glsl-canvas</DisplayName>
+    <Description xml:space="preserve">Live WebGL preview of GLSL shaders</Description>
+    <Tags>shader,glsl,snippet,GLSL,OpenGL Shading Language,__ext_vs,__ext_fs,__ext_gs,__ext_comp,__ext_vert,__ext_tesc,__ext_tese,__ext_frag,__ext_geom,__ext_glsl,__ext_glslv,__ext_glslf,__ext_glslg</Tags>
+    <Categories>Snippets,Other</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.38.0" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+      <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="git://github.com/actarian/vscode-glsl-canvas.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="git://github.com/actarian/vscode-glsl-canvas.git" />
+        
+          <Property Id="Microsoft.VisualStudio.Services.Links.Repository" Value="git://github.com/actarian/vscode-glsl-canvas.git" />
+        
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/actarian/vscode-glsl-canvas/issues" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/actarian/vscode-glsl-canvas/blob/master/README.md" />
+      
+      
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+      
+      
+      
+    </Properties>
+    <License>extension/LICENSE.txt</License>
+    <Icon>extension/resources/img/icon.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/resources/img/icon.png" Addressable="true" />
+  </Assets>
+</PackageManifest>

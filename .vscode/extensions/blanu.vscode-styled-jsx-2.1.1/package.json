@@ -1,0 +1,76 @@
+{
+	"name": "vscode-styled-jsx",
+	"displayName": "styled-jsx",
+	"description": "styled-jsx syntax highlight and code intellisense",
+	"version": "2.1.1",
+	"publisher": "blanu",
+	"icon": "assets/logo.png",
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/iChenLei/vscode-styled-jsx"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"keywords": [
+		"styled-jsx",
+		"styled-components",
+		"emotion",
+		"jsx",
+		"syntax",
+		"highlight",
+		"highlighting",
+		"css-in-js",
+		"zeit",
+		"vercel"
+	],
+	"scripts": {
+		"build:vsix": "npx vsce package"
+	},
+	"devDependencies": {
+		"vsce": "^2.3.0"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "source.css.jsx.styled",
+				"aliases": [
+					"CSS (Styled JSX)"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "source.css.jsx.styled",
+				"scopeName": "source.css.jsx.styled",
+				"path": "./syntaxes/css.json"
+			},
+			{
+				"injectTo": [
+					"source.js",
+					"source.ts",
+					"source.jsx",
+					"source.js.jsx",
+					"source.tsx"
+				],
+				"scopeName": "styled-jsx",
+				"path": "./syntaxes/jsx-styled.json",
+				"embeddedLanguages": {
+					"source.css.scss": "css",
+					"meta.embedded.line.ts": "typescript"
+				}
+			}
+		]
+	},
+	"__metadata": {
+		"id": "282c56aa-f02e-40b6-b55e-bfdee63cea4d",
+		"publisherId": "c04d5ec5-a178-482b-b523-c4f667895677",
+		"publisherDisplayName": "niceSprite",
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1642567068806
+	}
+}
