@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/css/cousre.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <title>Courses</title>
+  <link rel="icon" href="../images/bb-icon3.ico">
+</head>
+
+<body>
+  <div class="courseMainDiv">
+    <div class="left-panel">
+      <div class="logo">
+        <img src="/images/logo1.png" alt="" />
+      </div>
+      <div class="black"></div>
+      <div class="left">
+        <ul>
+          <!-- <img src="images/userw.png" alt=""> -->
+          <!-- <div class="name">Amit Kumar</div> -->
+          <li>
+            <a href="#">
+              <!-- <i class="bx bx-car"></i> -->
+
+              <p class="hover">
+                <span class="fa-regular fa-user"> </span>
+                <%= profile %>
+              </p>
+            </a>
+          </li>
+
+          <!-- <img src="images/activity.png" alt="" class="second"> -->
+
+          <li>
+            <a href="#">
+              <p><span class="fa fa-globe"></span>Activity Stream</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p><span class="fa fa-book"></span>Courses</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p><span class="fa fa-users"></span>Organizations</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p><span class="fa fa-calendar-days"></span>Calendar</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p><i class="fa fa-envelope"></i>Messages</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p><span class="fa fa-file-lines"></span>Grades</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p><span class="fa fa-toolbox"></span>Tools</p>
+            </a>
+          </li>
+          <i class="bx bx-car"></i>
+          <li>
+            <a href="./logout">
+              <p><span class="fa fa-power-off"></span>Sign Out</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="terms">
+        <a href="https://help.blackboard.com/Privacy_Statement " target="_blank">
+          <p>Privacy</p>
+        </a>
+        <a href="https://help.blackboard.com/Terms_of_Use" target="_blank">
+          <p>Terms</p>
+        </a>
+      </div>
+    </div>
+    <div class="courseDiv" style="width: 100%">
+      <div class="courses">
+        <h1>Courses</h1>
+        <!-- <div class="black"></div> -->
+      </div>
+      <div class="current">
+        <p>Current Courses</p>
+        <p class="upcoming">
+          Upcoming Courses <span class="fa fa-arrow-right"></span>
+        </p>
+        <!-- <div class="black"></div> -->
+      </div>
+      <div class="navDiv">
+        <div class="cardViewDiv">
+          <button id="bars" onclick="clickhandler('bar')">
+            <span class="fa fa-bars"></span>
+          </button>
+          <button id="table_view" onclick="clickhandler('table')">
+            <span class="fa fa-table"></span>
+          </button>
+        </div>
+        <div class="searchDiv">
+          <i class="fa fa-search"></i>
+          <input type="search" class="search" id="search" placeholder="Search Your Courses " />
+        </div>
+      </div>
+
+      <!----------------------------------table view---------------------------------- -->
+      <div class="course-name course_table" id="course_table_view">
+        <div class="fitem box1">
+          <div class="image-box">
+            <img src="/images/1.jpg" alt="" />
+          </div>
+          <div class="code">
+            <p>CAR-357_ON19BCA-2_A</p>
+          </div>
+          <div class="subject">
+            <p><a href="/html/major.html"> Major Project</a></p>
+          </div>
+          <div class="tname">
+            <P>Harmanjeet Singh</P>
+          </div>
+        </div>
+        <div class="fitem box2">
+          <div class="image-box">
+            <img src="/images/2.jpg" alt="" />
+          </div>
+          <div class="code">
+            <p>CAR-352_ON19BCA-2_A</p>
+          </div>
+          <div class="subject">
+            <p><a href="/html/mpt.html">MICROPROCESSOR AND INTERFACING</a></p>
+          </div>
+          <div class="tname">
+            <P>Pooja Kataria</P>
+          </div>
+        </div>
+        <div class="fitem box3">
+          <div class="image-box">
+            <img src="/images/3.jpg" alt="" />
+          </div>
+          <div class="code">
+            <p>CAR-356_ON19BCA-2_A</p>
+          </div>
+          <div class="subject">
+            <p>
+              <a href="/html/mpl.html">MICROPROCESSOR AND INTERFACING LAB</a>
+            </p>
+          </div>
+          <div class="tname labtname">
+            <P class="up">Pooja Kataria</P>
+          </div>
+        </div>
+        <div class="fitem box4">
+          <div class="image-box">
+            <img src="/images/4.jpg" alt="" />
+          </div>
+          <div class="code">
+            <p>CAR-354_ON19BCA-2_A</p>
+          </div>
+          <div class="subject">
+            <p><a href="/html/st.html">SOFTWARE TESTING</a></p>
+          </div>
+          <div class="tname">
+            <P>Prabhsharan</P>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------courses bar view------------------------------------------------------- -->
+      <div class="course_bar_view" id="course_bar_view">
+        <div class="bar_view_div div1">
+          <div class="code">
+            <p>CAR-357_ON19BCA-2_A</p>
+          </div>
+          <div class="subject">
+            <p><a href="/html/major.html"> Major Project</a></p>
+          </div>
+          <div class="tname">
+            <P>Harmanjeet Singh</P>
+          </div>
+        </div>
+        <div class="bar_view_div div2">
+          <div class="code">
+            <p>CAR-352_ON19BCA-2_A</p>
+          </div>
+          <div class="subject">
+            <p><a href="/html/mpt.html">MICROPROCESSOR AND INTERFACING</a></p>
+          </div>
+          <div class="tname">
+            <P>Pooja Kataria</P>
+          </div>
+        </div>
+        <div class="bar_view_div div3">
+          <div class="code">
+            <p>CAR-356_ON19BCA-2_A</p>
+          </div>
+          <div class="subject">
+            <p>
+              <a href="/html/mpl.html">MICROPROCESSOR AND INTERFACING LAB</a>
+            </p>
+          </div>
+          <div class="tname labtname">
+            <P class="up">Pooja Kataria</P>
+          </div>
+        </div>
+        <div class="bar_view_div div4">
+          <div class="code">
+            <p>CAR-354_ON19BCA-2_A</p>
+          </div>
+          <div class="subject">
+            <p><a href="/html/st.html">SOFTWARE TESTING</a></p>
+          </div>
+          <div class="tname">
+            <P>Prabhsharan</P>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const clickhandler = function (e) {
+      const course_table_view = document.getElementById("course_table_view");
+      const course_bar_view = document.getElementById("course_bar_view");
+
+      console.log(e);
+      if (e === "table") {
+        // course_table_view.style.display = " !importent";
+        // course_bar_view.style.display = "none";
+        course_table_view.classList.remove("course_table");
+        course_bar_view.classList.add("course_table");
+      } else {
+        // course_table_view.style.display = "none";
+        // course_bar_view.style.display = "";
+        course_table_view.classList.add("course_table");
+        course_bar_view.classList.remove("course_table");
+      }
+      console.log("click");
+    };
+  </script>
+</body>
+
+</html>

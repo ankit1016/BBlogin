@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Qwitcher+Grypen:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.left-panel {
+  /* height: 100vh; */
+  background-color: #ce3d3d;
+  width: 200px;
+}
+.fa-regular {
+  margin: 0.5rem;
+  font-size: 1.5rem !important;
+}
+.fa {
+  margin: 0.5rem;
+  font-size: 1.5rem !important;
+}
+
+.left-panel .logo img {
+  height: 31px;
+  width: 168px;
+  margin-top: 37px;
+  margin-left: 16px;
+}
+
+.left-panel .black {
+  margin-top: 33px;
+  height: 5px;
+  width: 200px;
+  background-color: #2a2525;
+}
+
+.left-panel .user img {
+  height: 26px;
+  margin-top: 15px;
+  margin-left: 14px;
+  float: left;
+}
+
+.left-panel .user .name {
+  margin-top: 17px;
+  margin-left: 16px;
+  font-size: 16px;
+  float: left;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.left-panel .left img {
+  height: 26px;
+  margin-top: 77px;
+  margin-left: -146px;
+  float: left;
+}
+
+.left-panel .left .name {
+  margin-top: 45px;
+  margin-left: 14px;
+  font-size: 18px;
+  float: left;
+  color: #fff;
+  font-weight: 400;
+}
+
+.second {
+  height: 25px;
+  width: 30px;
+}
+.courseMainDiv {
+  display: flex;
+}
+.courses h1 {
+   margin-top: 34px; 
+   margin-left: 230px; 
+  color: #262626;
+  font-family: "Noto Serif", serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  margin-left: 1rem;
+  padding: 1rem;
+  border-bottom: 2px solid #d8cdcd;
+}
+
+/* .courses .black {
+  margin-top: 36px;
+  margin-left: 200px;
+  height: 1px;
+  width: 87%;
+  background-color: #d6d2d2;
+} */
+
+/* .current .black {
+  margin-top: 20px;
+  margin-left: 200px;
+  height: 1px;
+  width: 87%;
+  background-color: #d6d2d2;
+  border-bottom: 4px solid #c0bbbb;
+} */
+
+/* .current h1 {
+  text-align: center;
+
+  color: #7c7878;
+  font-family: "Noto Serif", serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  cursor: pointer;
+  border-bottom: 4px solid gray;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.current h6 {
+  text-align: center;
+  margin-top: -20px;
+  margin-left: 80%;
+  color: #3a3838;
+  font-family: "Noto Serif", serif;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  cursor: pointer;
+} */
+
+.current {
+  display: flex;
+  border-bottom: 2px solid #d8cdcd;
+  margin-left: 1rem;
+  padding: 1rem 0;
+}
+
+.current p {
+  width: 50%;
+  text-align: right;
+  font-size: 1.5rem;
+}
+.upcoming {
+  font-size: 1rem !important;
+}
+
+.fa-arrow-right {
+  display: inline !important;
+  font-size: 1rem !important;
+  padding-top: 1rem !important;
+  color: #5f5c5c !important;
+}
+.fa-search {
+  font-size: 1rem !important;
+    color: #706c6c;
+    margin: 0px;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+.navDiv {
+  display: flex;
+  margin: 1rem;
+}
+
+.searchDiv {
+  border: 1px solid #d0cdcd;
+  padding: 0px !important;
+  background-color: #fff;
+  margin: 0rem 1rem;
+  padding: 0 0.5rem;
+}
+.search {
+  border: none;
+  background-color: #fff;
+  outline: none;
+  font-size: 1rem !important;
+  padding: 0.5rem 0px;
+  min-width: 220px;
+  min-height: 2rem;
+  max-height: 2rem;
+  margin-left: 13px;
+  margin-top: 3px;
+}
+
+.course_table {
+  display: none !important;
+}
+.course_bar_view {
+  display: "";
+}
+/* .current h6:hover {
+  text-decoration: underline;
+} */
+
+.cardViewDiv button {
+  font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0 -3px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #bcb9b9;
+}
+.fa-bars {
+  margin: 0;
+  font-size: 1rem !important;
+}
+.fa-table {
+  margin: 0;
+  font-size: 1rem !important;
+}
+.course-name {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.bar_view_div {
+  height: fit-content;
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem 0.75rem 0.75rem 1.5rem;
+  border: 1px solid gray;
+}
+.div1 {
+  border-left: 0.6rem solid #2fd9fc;
+}
+.div2 {
+  border-left: 0.6rem solid #85f472;
+}
+.div3 {
+  border-left: 0.6rem solid #157afb;
+}
+.div4 {
+  border-left: 0.6rem solid #fe5b91;
+}
+.labtname {
+  margin-top: 1rem !important;
+}
+.box1:hover {
+  transform: translateY(-3px);
+  transition: 0.4s ease;
+  -webkit-box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+}
+
+.box2:hover {
+  transform: translateY(-3px);
+  transition: 0.4s ease;
+  -webkit-box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+}
+
+.box3:hover {
+  transform: translateY(-3px);
+  transition: 0.4s ease;
+  -webkit-box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+}
+
+.box4:hover {
+  transform: translateY(-3px);
+  transition: 0.4s ease;
+  -webkit-box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 56px -17px rgba(0, 0, 0, 0.75);
+}
+
+.fitem {
+  border: 1px solid rgb(196, 192, 192);
+  width: 300px;
+  height: 240px;
+  margin: 12px;
+}
+
+.fitem img {
+  width: 300px;
+  height: 130px;
+}
+
+.code {
+  color: #5f5c5c;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.subject a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #494848;
+}
+
+.subject {
+  margin-left: 10px;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.up {
+  margin-top: -15px;
+}
+
+.subject:hover {
+  text-decoration: underline;
+}
+
+.tname {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 0.5rem;
+  color: #5f5c5c;
+}
+
+.left ul {
+  text-decoration: none;
+}
+
+.left ul li a {
+  text-decoration: none;
+}
+
+.left ul li a p {
+  color: #fff;
+  /* font-size: 18px; */
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.terms {
+  margin-left: 12px;
+  margin-top: 98px;
+}
+
+.terms p {
+  color: #d6c8c8;
+}
+
+.terms a {
+  text-decoration: none;
+}
+
+.line img {
+  height: 20px;
+  width: 30px;
+}

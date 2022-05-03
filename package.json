@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "boxicons": "^2.1.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^7.0.0"
+  },
+  "name": "bblogin",
+  "version": "1.0.0",
+  "main": "Home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon BBbackend/app.js -e js,ejs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
